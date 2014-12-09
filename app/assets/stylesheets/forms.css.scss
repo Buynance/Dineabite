@@ -1,0 +1,469 @@
+$dark-gray: rgb(96, 96, 96);
+$buynance-blue: rgb(37, 170, 225);
+$buynance-green: #8dc63f;
+$lato-bold: "latobold", Arial, sans-serif;
+$lato-regular: "latoregular", Arial, sans-serif;
+$lato-italics: "latoitalics", Arial, sans-serif;
+$lato-light: 'latolight', Arial, sans-serif;
+
+
+html,body {
+    height:100%;
+}
+
+.textbox {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    border: rgba(0, 0, 0, 0.3) 2px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.textbox:focus {
+    outline: none;
+    border: rgba(24, 149, 215, 1) 2px solid;
+    color: rgba(24, 149, 215, 1);
+}
+
+.form-button {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    border: rgba(0, 0, 0, 0.3) 0px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #90c843;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 12pt;
+    transition: background .4s;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background: #80b438;
+}
+
+.paper-header.container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 200px;
+}
+
+.paper-section {
+    color: rgb(123, 123, 123);
+    width: 820px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    .paper-section-header {
+        font-size: 22px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 62px;
+        font-family: 'latobold', Arial, sans-serif;
+    }
+/*=======================================================================================*/
+    .paper-section-main {
+        
+        .paper-section-main-sheet.first-paper-section {
+            margin-top: 0;
+            margin-left: 0;
+            -webkit-box-shadow: -1px -1px 3px 0px rgba(221, 221, 221, 0.75);
+            -moz-box-shadow:    -1px -1px 3px 0px rgba(221, 221, 221, 0.75);
+            box-shadow:         -1px -1px 3px 0px rgba(221, 221, 221, 0.75);
+            background: url("paper_1_bottom.png") bottom left no-repeat, url("paper-top-1.png") top left no-repeat, url("paper-body-1.png") 0 53px no-repeat ; 
+            background-size: auto auto, auto auto, 100% 100%;       
+        }
+        .paper-section-main-sheet.last-paper-section {
+            padding-top: 53px;
+            min-height: 185px;
+            padding-left: 50px;
+            background: url("paper_2_bottom.png") bottom left no-repeat, url("paper-top-3.png") top left no-repeat, url("paper-body-3.png") 0 53px no-repeat ;
+            background-size: auto auto, auto auto, 100% 100%;  
+        }
+        .paper-section-main-sheet {
+            width: 800px;
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+            background: url("paper_2_bottom.png") bottom left no-repeat, url("paper-top-2.png") top left no-repeat, url("paper-body-2.png") 0 53px no-repeat ;
+            background-size: auto auto, auto auto, 100% 100%;  
+            .paper-section-bank-login {
+                position: relative;
+                padding-right: 1px;
+                color: rgb(135, 135, 135);
+                padding-bottom: 0;
+                .paper-section-bank-login-left {
+                    float: left;
+                    padding-bottom: 75px;
+                    padding-right: 50px;
+                    width: 56%;
+                    .paper-section-bank-login-left-disclaimer{
+                      textarea{
+                        width: 100%;
+                        -webkit-box-sizing: border-box;
+                            -moz-box-sizing: border-box;
+                                box-sizing: border-box;
+                        height: 500px;
+                        font-size: 12px;
+                        padding: 20px;
+                        text-align: justify;
+                        white-space: normal;
+                        margin-bottom: 25px;
+                      }
+                    }
+                    .paper-section-bank-login-left-header {
+                        color: rgb(141, 198, 63);
+                        font-size: 22px;
+                        margin-bottom: 50px;
+                        font-family: "latobold", Arial, sans-serif;
+                        
+                    }
+                    .paper-section-bank-login-left-information {
+                        margin-bottom: 50px;
+                        font-size: 12pt;
+                        line-height: 24px;
+                        width: 80%;
+                        font-family: $lato-regular;
+                        .paper-section-bank-login-left-information-important {
+                            color: rgb(37, 170, 225);
+                        }
+                    }
+                    .paper-section-bank-login-form {
+                        color: rgb(68, 63, 63);
+                        .alert{
+                            width: 85%;
+                            margin-bottom: 50px;
+                            font-family: $lato-regular;
+                            .alert-status{
+                                font-family: $lato-bold;
+                            }
+                            ul{
+                                list-style-type: decimal;
+                                li{
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            span {
+                                font-size: 14px;
+                            } 
+                        } 
+                        .paper-section-bank-login-form-label {
+                            font-size: 12pt;
+                            margin-bottom: 20px;
+                            color: rgb(68, 63, 63);
+                            width: 80%;
+                            font-family: $lato-regular;
+                        }
+                        .paper-section-bank-login-form-input {
+                            select.textbox, input.textbox {
+                                font-size: 12px;
+                                background-color: rgb(242, 242, 242);
+                                border-width: 0px;
+                                width: 80%;
+                            }
+                        }
+                        .paper-section-bank-login-form-routing-info {
+                            width: 75%;
+                            margin-bottom: 70px;
+                            font-size: 15px;
+                            /*margin-bottom: 50px;*/
+                            font-family: $lato-bold;
+                        }
+                        .paper-section-bank-login-form-action {
+                            margin-top: 20px;
+                            .form-button.flat-button.button-submit {
+                                padding-right: 50px;
+                                padding-left: 50px;
+                                color: white;
+                                width: 70%;
+                                font-family: $lato-regular;
+                                font-size: 22px;
+                            }
+                        }
+                        .paper-section-bank-login-form-recover{
+                            text-align: center;
+                            width: 70%;
+                            margin-top: 20px;
+                            font-size: 14px;
+                            font-family: $lato-bold;
+                        }
+                    }
+                }
+                .paper-section-bank-login-right {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 44%;
+                    padding-bottom: 50px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    padding-top: 50px;
+                    background: #ffffff;
+                    /* Old browsers */
+                    background: -moz-linear-gradient(top, white 0%, #f2f2f2 20%, #f2f2f2 100%);
+                    /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(20%, #f2f2f2), color-stop(100%, #f2f2f2));
+                    /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(top, white 0%, #f2f2f2 20%, #f2f2f2 100%);
+                    /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(top, white 0%, #f2f2f2 20%, #f2f2f2 100%);
+                    /* Opera 11.10+ */
+                    background: -ms-linear-gradient(top, white 0%, #f2f2f2 20%, #f2f2f2 100%);
+                    /* IE10+ */
+                    background: linear-gradient(to bottom, white 0%, #f2f2f2 20%, #f2f2f2 100%);
+                    /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 );
+                    /* IE6-9 */
+                    font-family: 'latoregular', Arial, sans-serif;
+                    .paper-section-bank-login-right-top {
+                        .paper-section-bank-login-right-top-image {
+                            float: left;
+                            display: inline-block;
+                            margin-top: 8.5px;
+                            margin-left: 16px;
+                            img{
+                                width: 60px;
+                                height: 60px;
+                            }
+                            
+                        }
+                        .paper-section-bank-login-right-top-information {
+                            float: right;
+                            display: inline-block;
+                            width: 70%;
+                            .paper-section-bank-login-right-top-information-header {
+                                color: rgb(37, 170, 225);
+                                font-size: 22px;
+                                margin-bottom: 5px;
+                                font-family: 'latobold', Arial, sans-serif;
+                            }
+                            .paper-section-bank-login-right-top-information-subheader {
+                                color: rgb(111, 111, 111);
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .paper-section-bank-login-subsection {
+                        .paper-section-bank-login-subsection-points {
+                            font-size: 14px;
+                            margin-bottom: 15px;
+                            position: relative;
+                            img {
+                                top: 6px;
+                                left: 0px;
+                                position: absolute;
+                            }
+                            span {
+                                margin-left: 15px;
+                                display: block;
+                            }
+                        }
+                        .paper-section-bank-login-subsection-questions {
+                            font-family: 'latobold', Arial, sans-serif;
+                            color: rgb(37, 170, 225);
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                        .paper-section-bank-login-subsection-phone-number {
+                            font-family: 'latobold', Arial, sans-serif;
+                            color: rgb(99, 99, 99);
+                            font-size: 16px;
+                            margin-left: 10px;
+                            line-height: 25px;
+                        }
+                        .paper-section-bank-login-subsection-security-image-left {
+                            float: left;
+                            padding-bottom: 20px;
+                            img{
+                                width: 116px;
+                            }
+                        }
+                        .paper-section-bank-login-subsection-security-image-right {
+                            float: right;
+                            padding-bottom: 20px;
+                            padding-right: 5px;
+                            img {
+                                width: 110px;
+                            } 
+                        }
+
+                        .paper-section-bank-login-subsection-about{
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .paper-section-bank-login-right.fix-overflow{
+                    position: absolute; 
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+    .paper-section-top {
+        background-image: url("paper_top_background_3.png");
+        min-height: 62px;
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 45px;
+    }
+/*=======================================================================================*/
+
+
+    .paper-section-top{
+        width: 820px;
+    }
+
+    
+    .paper-section-body {
+        min-height: 185px;
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 10px;
+        background: url("paper_bottom_background.png") bottom left no-repeat, url("paper_body_background.png") top left;
+
+        .row {
+            vertical-align: center;
+            .paper-section-body-label {
+                height: 50px;
+                font-size: 15px;
+                span {
+                    line-height: 50px;
+                }
+            }
+            .paper-section-body-input {
+                .textbox {
+                    margin-bottom: 0px;
+                    background-color: rgb(242, 242, 242);
+                    border-width: 0px;
+                    width: 100%;
+                }
+            }
+        }
+        .paper-section-body-submit {
+            padding-top: 50px;
+            .form-button {
+                background-color: #1FACD7;
+                padding: 5px 50px;
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            text-align: center;
+        }
+        hr {}
+    }
+    .paper-section-bottom {
+        min-height: 185px;
+        padding-left: 50px;
+        padding-right: 45px;
+        background-image: url("paper_bottom_background.png");
+
+    }
+    .paper-braker {
+        width: 686px;
+        height: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin: 10px auto;
+        background-image: url("paper_bar.png");
+
+    }
+    .paper-section-label {
+        text-align: left;
+        vertical-align: middle;
+    }
+    .paper-section-input {
+        .input {
+            .textbox {
+                margin-bottom: 0px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+.flat-button.button-submit {
+    background-color: rgb(32, 172, 215);
+    color: #8c8c8c;
+    padding-right: 100px;
+    padding-left: 100px;
+    border-size: 0px;
+}
+
+.popover.error-popover {
+    background-color: #F2DEDE;
+    border-color: #EED3D7;
+    box-shadow: none;
+    color: #B94A48;
+    cursor: pointer;
+    max-width: none;
+    z-index: 1099;
+}
+.popover.error-popover .popover-content {
+    padding: 6px 14px;
+}
+.popover.error-popover.right .arrow {
+    border-right-color: #EED3D7;
+}
+.popover.error-popover.right .arrow:after {
+    border-right-color: #F2DEDE;
+}
+
+.popover.error-popover.top .arrow {
+    border-top-color: #EED3D7;
+    left: 30px;
+}
+.popover.error-popover.top .arrow:after {
+    border-top-color: #F2DEDE;
+}
+
+
+
+.field_with_errors{
+    input, select{
+        border-style: solid;
+        border-width: 1px !important;
+        border-color: #a94442;
+    }
+    
+}
+
+.ui-widget-header {
+    border: 1px solid #e78f08;
+    color: #ffffff;
+    font-weight: bold;
+    background: #f6a828 url("calender_bg.png") 50% 50% repeat-x;
+
+}
+
+.paper-section-bank-login-form-disclaimer {
+    display: block;
+    width: 80%;
+    padding-bottom: 20px;
+    span{
+        font-size: 10pt;
+        line-height: 1.5;
+        font-family: "latoregular", Arial, sans-serif;
+    }
+    a{
+        text-decoration: underline;
+    }
+}
+
+input.business_mobile_disclaimer{
+    float: left;
+}
+
+.validation-errors{
+    ul{
+        padding-left: 15px;
+        li{
+            font-size: 13px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  business_id: 1
+  image_url: MyString
+  full_price: 1
+  discounted_price: 1
+  available_quantity: 1
+  remaining_quantity: 1
+  name: MyString
+  short_description: MyString
+  long_description: MyText
+
+two:
+  business_id: 1
+  image_url: MyString
+  full_price: 1
+  discounted_price: 1
+  available_quantity: 1
+  remaining_quantity: 1
+  name: MyString
+  short_description: MyString
+  long_description: MyText

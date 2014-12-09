@@ -1,0 +1,20 @@
+.homepage-fluid-container{style: "padding-top: 0; padding-bottom: 0;"}
+  .homepage-nav
+    .homepage-header.homepage-header-container.clearfix
+      .hompage-header-logo
+        = link_to(image_tag("https://res.cloudinary.com/buynance/image/upload/c_scale,h_67,w_303/logo_b9ieyp.jpg"), "/")
+      .homepage-header-links.clearfix{style: "width: 64.5%;"}
+        .homepage-header-links-section.homepage-header-links-why{style: "width: 20%;"}
+          %a{href: '/#how'} How this Works
+        .homepage-header-links-section.homepage-header-links-blog{style: "width: 13%;"}
+          %a{href: "/#benefits"} Benefits
+        .homepage-header-links-section.homepage-header-links-why{style: "width: 18%;"}
+          %a{href: '/#why'} Why tugLocal™
+        .homepage-header-links-section.homepage-header-links-blog{style: "width: 8%;"}
+          %a{href: "/#faq"} FAQ
+        .homepage-header-links-section.homepage-header-links-phone{style: "width: 25%;"}
+          = image_tag("phone_icon.jpg")
+          %a{href: "tel:+1800229933"} 1-888-504-6302
+        .homepage-header-links-section.homepage-header-links-email{style: "width: 12%;"}
+          = image_tag("mail_icon.jpg")
+          %a{href: "mailto:team@buynance.com"} Email Us

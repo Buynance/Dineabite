@@ -1,0 +1,3 @@
+class Business < ActiveRecord::
+	
+end

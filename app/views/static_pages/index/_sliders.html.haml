@@ -1,0 +1,62 @@
+#slider.homepage-fluid-container.container-gray{style: "margin-top: -10px;"}
+  .homepage-container
+    .homepage-sliders.clearfix
+      .homepage-slider-right.paper.paper-green
+        .homepage-slider-right-fold
+          = image_tag("https://res.cloudinary.com/buynance/image/upload/c_scale,h_45/homepage_slider_fold_blue_kbnsxl.png")
+        .homepage-slider-header.paper-header
+          %span Get New Deal
+        .homepage-slider-subheader
+          %span Adjust Your Funded Amount to View Savings
+        #funder-slider.homepage-slider-main.paper-body
+          .homepage-slider-main-section
+            #slider-range-funder
+            .homepage-slider-main-section-label.clearfix
+              .homepage-slider-main-section-label-left
+                %span.homepage-slider-right-main-section-label-left-min
+              .homepage-slider-main-section-label-right
+                %span.homepage-slider-right-main-section-label-right-max
+          .homepage-slider-main-result
+            %hr
+            .homepage-slider-main-result-text.clearfix
+              .homepage-slider-main-result-text-left
+                %span.blue-highlight Savings 
+                %span vs. Others
+              .homepage-slider-main-result-text-right
+                %span.slider-right-value $750
+            %hr
+          .homepage-slider-main-action
+            .homepage-slider-main-action-button
+              %a.flat-button.button-get-financed{href: "/signup?is_funding=true"}
+                %span Get New Deal
+            .homepage-slider-action-subheader
+              %span{onclick: "$('body').scrollTo('#how-works', 800);$('.jcarousel').jcarousel('scroll', 0);"}How this Works
+      #refi-slider.homepage-slider-left.paper.paper-green
+        .homepage-slider-left-fold
+          = image_tag("https://res.cloudinary.com/buynance/image/upload/c_scale,h_45/homepage_slider_fold_green_n6baoa.png")
+        .homepage-slider-header.paper-header
+          %span ReVise™ Current Deal
+        .homepage-slider-subheader
+          %span Use Slider to Reset Your Daily Collection
+        .homepage-slider-main.paper-body
+          .homepage-slider-main-section
+            #slider-range-refi
+            .homepage-slider-main-section-label.clearfix
+              .homepage-slider-main-section-label-left
+                %span.homepage-slider-left-main-section-label-left-min
+              .homepage-slider-main-section-label-right
+                %span.homepage-slider-left-main-section-label-right-max
+          .homepage-slider-main-result
+            %hr
+            .homepage-slider-main-result-text.clearfix
+              .homepage-slider-main-result-text-left
+                %span ReVise™ Daily Collection
+              .homepage-slider-main-result-text-right.slider-left
+                %span.slider-left-value $50
+            %hr
+          .homepage-slider-main-action
+            .homepage-slider-main-action-button
+              %a.flat-button.button-get-refinance{href: "/signup?is_refinance=true"}
+                %span ReVise™ Current Deal
+            .homepage-slider-action-subheader.slider-right
+              %span{onclick: "$('body').scrollTo('#how-works', 800);$('.jcarousel').jcarousel('scroll', 1);"}How this Works

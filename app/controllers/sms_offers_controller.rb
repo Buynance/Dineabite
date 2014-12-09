@@ -1,0 +1,3 @@
+class SmsOffersController < ApplicationController
+	
+end
