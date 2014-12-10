@@ -55,7 +55,12 @@ Rails.application.routes.draw do
   #   end
 
   resources :potential_businesses
+  resources :offers
+  
+  get "sms/offer/link" => "sms_offers#send_offer_link"
+  
   root 'static_pages#index'
+
 
 
   
