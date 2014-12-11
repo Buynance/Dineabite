@@ -1,7 +1,7 @@
 .web_body
   .paper-section
     .paper-section-header
-      Signup
+      Welcome
     .paper-section-main.clearfix   
       .paper-section-main-sheet.first-paper-section.clearfix
         .paper-section-main-sheet.clearfix
@@ -13,9 +13,9 @@
                     .paper-section-bank-login.row
                       .paper-section-bank-login-left.col-xs-7
                         .paper-section-bank-login-left-header
-                          %span Potential Business
+                          %span Signup
                         .paper-section-bank-login-left-information
-                          %span Blah, Blah, Blah, Blah
+                          %span To gain access to our service please complete the following form.
                         .paper-section-bank-login-form
                           = simple_form_for @potential_business, defaults: { input_html: { novalidate: "novalidate" } } do |f|
                             - if @potential_business.errors.any?
@@ -27,11 +27,11 @@
                             .paper-section-bank-login-form-label
                               %span What is your business first name?
                             .paper-section-bank-login-form-input
-                              = f.input :first_name, placeholder: "First Namer", input_html: {class: 'textbox'}, label: false,  error: false  
+                              = f.input :first_name, placeholder: "First Name", input_html: {class: 'textbox'}, label: false,  error: false  
                             .paper-section-bank-login-form-label
                               %span What is your last name?
                             .paper-section-bank-login-form-input
-                              = f.input :last_name, placeholder: "Last Namer", input_html: {class: 'textbox'}, label: false,  error: false 
+                              = f.input :last_name, placeholder: "Last Name", input_html: {class: 'textbox'}, label: false,  error: false 
                             .paper-section-bank-login-form-label
                               %span What is your restaurant name?
                             .paper-section-bank-login-form-input
@@ -43,7 +43,7 @@
                             .paper-section-bank-login-form-label
                               %span What is your email address?
                             .paper-section-bank-login-form-input
-                              = f.input :email, placeholder: 'Restaurant Name', input_html: {class: 'textbox required'}, label: false, error: false  
+                              = f.input :email, placeholder: 'Email', input_html: {class: 'textbox required'}, label: false, error: false  
                             .paper-section-bank-login-form-action
                               = f.submit "Continue", class: "form-button flat-button button-submit"
                       .paper-section-bank-login-right.col-xs-5.fix-overflow

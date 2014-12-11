@@ -1,3 +1,3 @@
-class Business < ActiveRecord::
+class Business < ActiveRecord::Base
 	
 end
