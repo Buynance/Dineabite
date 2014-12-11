@@ -4,47 +4,42 @@
       Welcome
     .paper-section-main.clearfix   
       .paper-section-main-sheet.first-paper-section.clearfix
-        .paper-section-main-sheet.clearfix
-          .paper-section-main-sheet.clearfix
-            .paper-section-main-sheet.clearfix
-              .paper-section-main-sheet.clearfix
-                .paper-section-main-sheet.clearfix
-                  .paper-section-main-sheet.last-paper-section
-                    .paper-section-bank-login.row
-                      .paper-section-bank-login-left.col-xs-7
-                        .paper-section-bank-login-left-header
-                          %span Signup
-                        .paper-section-bank-login-left-information
-                          %span To gain access to our service please complete the following form.
-                        .paper-section-bank-login-form
-                          = simple_form_for @potential_business, defaults: { input_html: { novalidate: "novalidate" } } do |f|
-                            - if @potential_business.errors.any?
-                              %div{class: "alert alert-danger validation-errors"}
-                                %ul
-                                  - @potential_business.errors.full_messages.each do |msg|
-                                    %li= msg
-                            
-                            .paper-section-bank-login-form-label
-                              %span What is your business first name?
-                            .paper-section-bank-login-form-input
-                              = f.input :first_name, placeholder: "First Name", input_html: {class: 'textbox'}, label: false,  error: false  
-                            .paper-section-bank-login-form-label
-                              %span What is your last name?
-                            .paper-section-bank-login-form-input
-                              = f.input :last_name, placeholder: "Last Name", input_html: {class: 'textbox'}, label: false,  error: false 
-                            .paper-section-bank-login-form-label
-                              %span What is your restaurant name?
-                            .paper-section-bank-login-form-input
-                              = f.input :business_name, placeholder: 'Restaurant Name', input_html: {class: 'textbox required'}, label: false, error: false   
-                            .paper-section-bank-login-form-label
-                              %span What is your phone number?
-                            .paper-section-bank-login-form-input
-                              = f.input :phone_number, placeholder: 'Phone Number', input_html: {class: 'textbox required'}, label: false, error: false  
-                            .paper-section-bank-login-form-label
-                              %span What is your email address?
-                            .paper-section-bank-login-form-input
-                              = f.input :email, placeholder: 'Email', input_html: {class: 'textbox required'}, label: false, error: false  
-                            .paper-section-bank-login-form-action
-                              = f.submit "Continue", class: "form-button flat-button button-submit"
-                      .paper-section-bank-login-right.col-xs-5.fix-overflow
-                        = render "shared/funding_sidebar"
+        .paper-section-main-sheet.last-paper-section
+          .paper-section-bank-login.row
+            .paper-section-bank-login-left.col-xs-7
+              .paper-section-bank-login-left-header
+                %span Signup
+              .paper-section-bank-login-left-information
+                %span To gain access to our service please complete the following form.
+              .paper-section-bank-login-form
+                = simple_form_for @potential_business, defaults: { input_html: { novalidate: "novalidate" } } do |f|
+                  - if @potential_business.errors.any?
+                    %div{class: "alert alert-danger validation-errors"}
+                      %ul
+                        - @potential_business.errors.full_messages.each do |msg|
+                          %li= msg
+                  
+                  .paper-section-bank-login-form-label
+                    %span What is your first name?
+                  .paper-section-bank-login-form-input
+                    = f.input :first_name, placeholder: "First Name", input_html: {class: 'textbox'}, label: false,  error: false  
+                  .paper-section-bank-login-form-label
+                    %span What is your last name?
+                  .paper-section-bank-login-form-input
+                    = f.input :last_name, placeholder: "Last Name", input_html: {class: 'textbox'}, label: false,  error: false 
+                  .paper-section-bank-login-form-label
+                    %span What is your restaurant name?
+                  .paper-section-bank-login-form-input
+                    = f.input :business_name, placeholder: 'Restaurant Name', input_html: {class: 'textbox required'}, label: false, error: false   
+                  .paper-section-bank-login-form-label
+                    %span What is your mobile phone number?
+                  .paper-section-bank-login-form-input
+                    = f.input :phone_number, placeholder: 'Phone Number', input_html: {class: 'textbox required'}, label: false, error: false  
+                  .paper-section-bank-login-form-label
+                    %span What is your email address?
+                  .paper-section-bank-login-form-input
+                    = f.input :email, placeholder: 'Email', input_html: {class: 'textbox required'}, label: false, error: false  
+                  .paper-section-bank-login-form-action
+                    = f.submit "Continue", class: "form-button flat-button button-submit"
+            .paper-section-bank-login-right.col-xs-5.fix-overflow
+              = render "shared/funding_sidebar"
