@@ -38,11 +38,11 @@ class PotentialBusiness < ActiveRecord::Base
     end
 
     def send_signup_notification
-    	#if Rails.env.production?
-    		#TwilioLib.send_text("7169085466", "A business has signed up to tuglocal. Name: #{self.first_name} #{self.owner_last_name}. Business Name: #{self.business_name}. Phone Number: #{self.phone_number}") 
-      		#TwilioLib.send_text("7169087957", "A business has signed up to tuglocal. Name: #{self.first_name} #{self.owner_last_name}. Business Name: #{self.business_name}. Phone Number: #{self.phone_number}")
-    		TwilioLib.send_text("3473567903", "A business has signed up to tuglocal. Name: #{self.first_name} #{self.last_name}. Business Name: #{self.business_name}. Phone Number: #{self.phone_number}")
-    	#end
+    	if Rails.env.production?
+    		TwilioLib.send_text("7169085466", "A business has signed up to tuglocal. Name: #{self.first_name} #{self.last_name}. Business Name: #{self.business_name}. Phone Number: #{self.phone_number}")
+      		TwilioLib.send_text("7169087957", "A business has signed up to tuglocal. Name: #{self.first_name} #{self.last_name}. Business Name: #{self.business_name}. Phone Number: #{self.phone_number}")
+    		#TwilioLib.send_text("3473567903", "A business has signed up to tuglocal. Name: #{self.first_name} #{self.last_name}. Business Name: #{self.business_name}. Phone Number: #{self.phone_number}")
+    	end
     end
 
 
