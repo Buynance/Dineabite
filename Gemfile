@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3.1'
@@ -38,6 +38,21 @@ gem 'simple_form'
 gem 'twilio-ruby'
 
 gem 'devise'
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'quiet_assets'
+  gem 'sqlite3'
+  gem 'html2haml'
+end
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

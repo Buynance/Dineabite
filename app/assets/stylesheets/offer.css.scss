@@ -1,0 +1,124 @@
+$dark-gray: rgb(96, 96, 96);
+$buynance-blue: rgb(37, 170, 225);
+$buynance-green: #8dc63f;
+$lato-bold: "latobold", Arial, sans-serif;
+$lato-regular: "latoregular", Arial, sans-serif;
+$lato-italics: "latoitalics", Arial, sans-serif;
+$lato-light: 'latolight', Arial, sans-serif;
+$text-gray: rgb(139, 139, 139);
+$background-gray: rgb(242, 242, 242);
+
+
+.offer-container{
+	width: 100%;
+	.offer-image{
+		img{
+			width: 100%;
+		}
+	}
+	.offer-body{
+		//padding-top: 1.5em;
+		padding-left: 0.6em;
+		padding-right: 0.6em;
+
+		.offer-body-subtitle{
+			padding-top: 1.2em;
+			padding-bottom: 1.2em;
+			.offer-body-subtitle-short-description{
+				text-align: center;
+				span{
+					font-family: $lato-regular;
+					font-size: 2.0em;
+				}
+			}
+			.offer-body-subtitle-business-name{
+				text-align: center;
+				span{
+					color: $buynance-blue;
+					font-family: $lato-bold;
+					font-size: 2.0em;
+				}
+			}
+		}
+
+		.offer-body-price{
+			padding-top: 0.6em;
+			padding-bottom: 0.6em;
+			padding-left: 1.0em;
+			.offer-body-price-amount{
+				float: left;
+
+				span{
+					font-family: $lato-bold;
+					font-size: 2.8em;
+				}
+			}
+			.offer-body-price-action{
+				float: right;
+				width: 11.0em;
+				text-align: center;
+				padding: 0.8em;
+				background-color: $buynance-blue;
+				span{
+					color: white;
+					font-family: $lato-bold;
+					font-size: 2.2em;
+				}
+			}
+		}
+
+		.offer-body-discount{
+			background-color: $buynance-green;
+			text-align: center;
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			span{
+				font-family: $lato-regular;
+				font-size: 2.2em;
+				color: white;
+			}
+		}
+
+		.offer-body-quantity{
+			padding-top: 2.0em;
+			padding-bottom: 2.0em;
+			text-align: center;
+			span{
+				
+				font-size: 1.8em;
+				font-family: $lato-regular;
+			}
+		}
+	}
+
+	.offer-description{
+		padding-left: 0.6em;
+		padding-right: 0.6em;
+		background-color: rgb(244, 244, 244);
+		padding-top: 2.5em;
+
+	}
+}
+
+.offer-info-section{
+	margin-bottom: 1.2em;
+	.offer-info-section-title{
+		padding-top: 1.2em;
+		padding-bottom: 1.6em;
+		padding-left: 1.0em;
+		background-color: rgb(169, 180, 182);
+		span{
+			font-size: 1.8em;
+			font-family: $lato-bold;
+			color: white;
+		}
+	}
+	.offer-info-section-body{
+		padding: 1.2em;
+		background-color: white;
+		span{
+			font-family: $lato-italics;
+			font-size: 1.2em;
+		}
+	}
+}

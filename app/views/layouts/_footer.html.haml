@@ -2,7 +2,7 @@
   .container
     .footer.row
       .footer-image-section.col-xs-4
-        =image_tag("buynance-footer.jpg")
+        =image_tag("http://res.cloudinary.com/buynance/image/upload/c_scale,w_184/tuglocal/tuglocal_logo_final-2.png")
       .col-xs-5
         .col-xs-6.footer-section
           .footer-section-header
@@ -35,10 +35,6 @@
                   %span{onclick: "$('body').scrollTo('#faq', 800)", style: "cursor: pointer;"} FAQ
                 - else
                   %a{href: '/#faq'} FAQ
-              %li 
-                %a{href: '/tos', style: "text-decoration: none; color: white;"} Terms of Service
-              %li 
-                %a{href: '/privacy', style: "text-decoration: none; color: white;"} Privacy Policy
         .col-xs-6.footer-section
           .footer-section-header
             %span WE ARE SOCIAL
@@ -87,5 +83,5 @@
                 %li
                   = image_tag("mail_footer_icon.png")
                   %span
-                    = "team@buynance.com"
+                    = "team@tuglocal.com"
 

@@ -1,4 +1,4 @@
-ActiveAdmin.register Offer do
+ActiveAdmin.register PotentialBusiness do
 
 
   # See permitted parameters documentation:

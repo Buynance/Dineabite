@@ -1,5 +1,7 @@
 class OffersController < ApplicationController
 
+	layout "offers"
+
 	def show
 		@offer = Offer.find(params[:id])
 

@@ -51,8 +51,7 @@ margin-right:0
                 float: left;
                 width: 35.5%;
                 img{
-                    width: 30.3em;
-                    height: 6.7em;
+                    height: 8.7em;
                 }
             }
             .homepage-header-links{
@@ -60,7 +59,7 @@ margin-right:0
                 font-family: 'latobold', Arial, sans-serif;
                 float: left;
                 width: 45.7%;
-                margin-top: 3.3em;
+                margin-top: 3.8em;
 
                 .homepage-header-links-why{
                     color: #20acd7;
@@ -75,6 +74,11 @@ margin-right:0
                     span, a{
                         font-size: 1.5em;
                         text-decoration: none;
+                        color: #20acd7;
+                    }
+
+                    a:visited{
+                      color: #20acd7;
                     }
                 }
 
@@ -1319,91 +1323,92 @@ a.jcarousel-control-prev, a.jcarousel-control-next {
   /**************************************************/
  /*                 Media Queries                  */
 /**************************************************/
-
+/*
 
 @media all and (max-width: 1188px) { 
     body {
-        font-size: 0.5625em;
+        font-size: 0.5625em !important;
     }
 }
 
 @media all and (max-width: 1080px) { 
     body {
-        font-size: 0.5172em;
+        font-size: 0.5172em !important;
     }
 }
 
 @media all and (max-width: 1044px) { 
     body {
-        font-size: 0.5em;
+        font-size: 0.5em !important;
     }
 }
 
 @media all and (max-width: 965px) { 
     body {
-        font-size: 0.4621em;
+        font-size: 0.4621em !important;
     }
 }
 
 @media all and (max-width: 914px) { 
     body {
-        font-size: 0.4375em;
+        font-size: 0.4375em !important;
     }
 }
 
 @media all and (max-width: 850px) { 
     body {
-        font-size: 0.4070em;
+        font-size: 0.4070em !important;
     }
 }
 
 @media all and (max-width: 808px) { 
     body {
-        font-size: 0.3870em;
+        font-size: 0.3870em !important;
     }
 }
 
 
 @media all and (max-width: 783px) { 
     body {
-        font-size: 0.375em;
+        font-size: 0.375em !important;
     }
 }
 
 @media all and (max-width: 742px) { 
     body {
-        font-size: 0.3558em;
+        font-size: 0.3558em !important;
     }
 }
 
 @media all and (max-width: 713px) { 
     body {
-        font-size: 0.3375em;
+        font-size: 0.3375em !important;
     }
 }
 
 
 @media all and (max-width: 652px) { 
     body {
-        font-size: 0.3125em;
+        font-size: 0.3125em !important;
     }
 }
 
 @media all and (max-width: 630px) { 
     body {
-        font-size: 0.3017em;
+        font-size: 0.3017em !important;
     }
 }
 
 @media all and (max-width: 522px) { 
     body {
-        font-size: 0.25em;
+        font-size: 0.25em !important;
     }
 }
 
 @media all and (max-width: 513px) { 
     body {
-        font-size: 0.2457em;
+        font-size: 0.2457em !important;
     }
 }
 
+*/
