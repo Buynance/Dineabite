@@ -1,0 +1,47 @@
+.offer-container
+  .offer-image
+    /= image_tag(@offer.image_url)
+    = image_tag("demo-offer-image.png")
+  .offer-body
+    .offer-body-subtitle
+      .offer-body-subtitle-short-description
+        %span Valid Weekdays: 
+        %span{style: "font-family: 'latobold', Arial, sans-serif;"} $25 for $50 at
+      .offer-body-subtitle-business-name
+        %span 
+          /= @offer.business.name
+          Maries Italian Kitchen
+    .offer-body-border
+    .offer-body-price.clearfix
+      .offer-body-price-amount
+        %span.offer-body-price-amount-old{style: "color: rgb(191, 191, 191); margin-right: 0.3em;"} 50 
+        %span.offer-body-price-amount-new $25!
+      .offer-body-price-action
+        %a{href: "#buypage"} Buy
+    .offer-body-discount
+      %span 
+        = "50% Discount"
+    .offer-body-quantity
+      %span{style: "font-family: 'latobold', Arial, sans-serif;"} 392 
+      %span Sold 
+      %span{style: "color: rgb(185, 185, 185);"} > 
+      %span{style: "font-family: 'latobold', Arial, sans-serif; color: rgb(163, 196, 19);"} 8 
+      %span{style: "color: rgb(163, 196, 19);"} Remaining 
+  .offer-description
+    .offer-info-section
+      .offer-info-section-title
+        %span The Favorites
+      .offer-info-section-body
+        %span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    .offer-info-section
+      .offer-info-section-title
+        %span Fine Print
+      .offer-info-section-body
+        %span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    .offer-info-section{style: "margin-bottom: 2.5em;"}
+      .offer-info-section-title
+        %span Find Us
+      .offer-info-section-body{style: "padding: 0;"}
+        = image_tag("https://maps.googleapis.com/maps/api/staticmap?center=New+York,NY&zoom=15&size=600x300&key=AIzaSyBACcW1Scur7a7j0x4DK8Ej5vqltnS26XE", style: "width: 100%;")
+    .offer-info-action
+      %a{href: "#buypage"} Buy

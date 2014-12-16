@@ -1,0 +1,50 @@
+%script{:src => "//api.cloudsponge.com/address_books.js", :type => "text/javascript"}
+
+.cloudsponge-label
+  %span Select people from your address book
+.cloudsponge-social-buttons
+  %a#source-facebook.deep-link.delayed{:onclick => "return cloudsponge.launch('facebook');"}
+    %img{:alt => "Facebook", :height => "28", :src => "/images/address_books/facebook.png", :title => "Facebook", :width => "28"}
+  %a#source-linkedin.deep-link.delayed{:onclick => "return cloudsponge.launch('linkedin');"}
+    %img{:alt => "Linkedin", :height => "28", :src => "/images/address_books/linkedin.png", :title => "Linkedin", :width => "28"}
+  %a#source-gmail.deep-link.delayed{:onclick => "return cloudsponge.launch('gmail');"}
+    %img{:alt => "Gmail", :height => "28", :src => "/images/address_books/google.png", :title => "Gmail", :width => "28"}
+  %a#source-yahoo.deep-link.delayed{:onclick => "return cloudsponge.launch('yahoo');"}
+    %img{:alt => "Yahoo", :height => "28", :src => "/images/address_books/yahoo.png", :title => "Yahoo", :width => "28"}
+  %a#source-windowslive.deep-link.delayed{:onclick => "return cloudsponge.launch('outlook');"}
+    %img{:alt => "Outlook.com", :height => "28", :src => "/images/address_books/outlook.png", :title => "Outlook.com", :width => "28"}
+  %a#source-aol.deep-link.delayed{:onclick => "return cloudsponge.launch('aol');"}
+    %img{:alt => "AOL", :height => "28", :src => "/images/address_books/aol.png", :title => "AOL", :width => "28"}
+  %a#source-plaxo.deep-link{:onclick => "return cloudsponge.launch('plaxo');"}
+    %img{:alt => "Plaxo", :height => "28", :src => "/images/address_books/plaxo_button.png", :title => "Plaxo", :width => "28"}
+  %a#source-uol.deep-link.hidden{:onclick => "return cloudsponge.launch('uol');"}
+    %img{:alt => "UOL", :height => "28", :src => "/images/address_books/uol.png", :title => "UOL", :width => "28"}
+  %a#source-bol.deep-link.hidden{:onclick => "return cloudsponge.launch('bol');"}
+    %img{:alt => "BOL", :height => "28", :src => "/images/address_books/bol.png", :title => "BOL", :width => "28"}
+  %a#source-terra.deep-link.hidden{:onclick => "return cloudsponge.launch('terra');"}
+    %img{:alt => "Terra", :height => "28", :src => "/images/address_books/terra.png", :title => "Terra", :width => "28"}
+  %a#source-outlook.deep-link{:onclick => "return cloudsponge.launch('outlook');"}
+    %img{:alt => "Microsoft Outlook", :height => "28", :src => "/images/address_books/microsoft.png", :title => "Microsoft Outlook", :width => "28"}
+  %a#source-addressbook.deep-link.hidden{:onclick => "return cloudsponge.launch('addressbook');"}
+    %img{:alt => "Mac Address Book", :height => "28", :src => "/images/address_books/apple.png", :title => "Mac Address Book", :width => "28"}
+
+%textarea#contact_list{:style => "width:90%;height:10.0 em; margin-left: 5%;margin-right: 5%;margin-bottom: 1.8em; font-size: 1.6em;"}
+:javascript
+  // Replace the domain_key and stylesheet with valid values.
+  var csPageOptions = {
+  domain_key:"S3HKQMSH4EQAGC77JDB6",
+  textarea_id:'contact_list',
+  mobile_render: true,
+  // set skipSourceMenu to true when using deep links for a more consistent UX
+  skipSourceMenu:true, // suppresses the source menu unless linked to directly
+  // delay making the links that launch a popup clickable
+  // until after the widget has initialized completly. a popup window must
+  // be opened in an onclick handler, so we don't support queueing these actions
+  afterInit:function() {
+  var i, links = document.getElementsByClassName('delayed');
+  for(i = 0; i < links.length; i++) {
+  // make the links that launch a popup clickable by setting the href property
+  links[i].href = "#";
+  }
+  }
+  };

@@ -1,0 +1,10 @@
+.offer-container
+  .offer-image
+    /= image_tag(@offer.image_url)
+    = image_tag("demo-offer-image.png")
+  .offer-body{style: "padding-top: 0.6em;"}
+    .offer-body-discount
+      %span 
+        = "Thank You"
+    .offer-body-quantity{style: "text-align: left;  padding-left: 0.6em; padding-right: 0.6em; padding-top: 1.4em;"}
+      %span{style: "font-size: 1.4em;"} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

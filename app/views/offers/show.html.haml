@@ -1,43 +1,11 @@
-.offer-container
-  .offer-image
-    /= image_tag(@offer.image_url)
-    = image_tag("demo-offer-image.png")
-  .offer-body
-    .offer-body-subtitle
-      .offer-body-subtitle-short-description
-        %span 
-          /= @offer.short_description
-          Valid Weekdays: $25 for $50 at
-      .offer-body-subtitle-business-name
-        %span 
-          /= @offer.business.name
-          Maries Italian Kitchen
-    .offer-body-price.clearfix
-      .offer-body-price-amount
-        %span.offer-body-price-amount-old 50 
-        %span.offer-body-price-amount-new $25!
-      .offer-body-price-action
-        %span Buy
-    .offer-body-discount
-      %span 
-        = "50% Discount"
-    .offer-body-quantity
-      %span 392 
-      %span Sold 
-      %span > 
-      %span 8 
-      %span Remaining 
-  .offer-description
-    .offer-info-section
-      .offer-info-section-title
-        %span The Favorites
-      .offer-info-section-body
-        %span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    .offer-info-section
-      .offer-info-section-title
-        %span Fine Print
-      .offer-info-section-body
-        %span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+#offerpage{data: {role: "page"}}
+  = render "offerpage"
+#buypage{data: {role: "page"}}
+  = render "buy"
+#invitepage{data: {role: "page"}}
+  = render "invitepage"
+#donepage{data: {role: "page"}}
+  = render "donepage"
 
 
 
