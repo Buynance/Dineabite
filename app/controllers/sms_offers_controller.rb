@@ -17,5 +17,21 @@ class SmsOffersController < ApplicationController
 
     	render_twiml response
 	end
+
+	def check_offer_code
+		code = parmas[:Body]
+		if code == "3878"
+			validation_message = "This offer is valid."
+		else
+			validation_message = "This offer is invalid"
+		end
+
+		TwilioLib.send_text(params[:From], validation_message)
+
+		response = Twilio::TwiML::Response.new do |r|
+    	end
+
+    	render_twiml response
+	end
 	
 end
