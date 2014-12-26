@@ -60,6 +60,7 @@ Rails.application.routes.draw do
   resources :offers
   
   get "sms/offer/link" => "sms_offers#send_offer_link"
+  get "sms/offer/validation" => "sms_offers#check_offer_code"
   
   root 'static_pages#index'
 
