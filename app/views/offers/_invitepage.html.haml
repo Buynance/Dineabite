@@ -2,14 +2,19 @@
   .offer-image
     /= image_tag(@offer.image_url)
     = image_tag("demo-offer-image.png")
-  .offer-body{style: "padding-top: 0.6em;"}
-    .offer-body-discount
+  .offer-body{style: "padding-top: 0.6em; background-color: #f4f4f4;"}
+    .offer-body-discount{style: "padding-top: 1.0em; padding-bottom: 1.0em;"}
       %span 
         = "Order Complete"
-    .offer-body-quantity
+    .offer-body-quantity{style: "background-color: white;"}
       %span Order 
       %span{style: "font-family: 'latobold', Arial, sans-serif;"} #3878
   .offer-description
+    .offer-info-section
+      .offer-info-section-title
+        %span Redemption Instructions
+      .offer-info-section-body
+        %span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     .offer-info-section
       .offer-info-section-title
         %span Invite Your Friends
@@ -19,4 +24,4 @@
     = render "cloudsponge"
     .offer-body-checkout-submit
       .offer-body-checkout-submit-button
-        %a{href: "#donepage"} Confirm
+        %a{href: "#donepage"} Invite Friends Now

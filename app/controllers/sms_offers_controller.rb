@@ -33,5 +33,11 @@ class SmsOffersController < ApplicationController
 
     	render_twiml response
 	end
+
+	def send_redemption_email
+		fullname = params[:fullname]
+		Offer.send_redemption_instructions(fullname)
+		render :nothing => true
+	end
 	
 end

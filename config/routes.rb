@@ -61,6 +61,8 @@ Rails.application.routes.draw do
   
   get "sms/offer/link" => "sms_offers#send_offer_link"
   get "sms/offer/validation" => "sms_offers#check_offer_code"
+
+  post "sms/offer/send_redemption" => "sms_offers#send_redemption_email"
   
   root 'static_pages#index'
 
