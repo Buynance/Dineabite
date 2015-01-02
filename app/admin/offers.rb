@@ -14,5 +14,7 @@ ActiveAdmin.register Offer do
   #   permitted
   # end
 
+  
+
 
 end

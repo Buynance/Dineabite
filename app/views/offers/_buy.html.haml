@@ -17,10 +17,11 @@
       .offer-body-price-amount{style: "text-align: center;"}
         %span.offer-body-price-amount-old{style: "color: rgb(191, 191, 191); margin-right: 0.3em;text-decoration: line-through;"} $50 
         %span.offer-body-price-amount-new $25!
+  .offer-description
     .offer-body-discount
       %span 
         = "Checkout"
-    .offer-body-checkout
+    .offer-body-checkout{style: "background-color: white;"}
       .offer-body-checkout-section.clearfix
         .offer-body-checkout-section-label
           %span Full Name
@@ -66,6 +67,6 @@
           %span E-mail
         .offer-body-checkout-section-input
           %input{:name => "email", :type => "email", value: "jdoe@jdoebusiness.com", style: "text-align: center;"}
-    .offer-body-checkout-submit
-      .offer-body-checkout-submit-button
-        %a{href: "#invitepage", id: "redemption-alert"} Confirm
+      .offer-body-checkout-submit
+        .offer-body-checkout-submit-button
+          %a{href: "#invitepage", id: "redemption-alert"} Confirm
