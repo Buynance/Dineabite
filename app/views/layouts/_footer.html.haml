@@ -17,9 +17,9 @@
                   %a{href: '/'} Home
               %li 
                 - if current_page?('/')
-                  %span{onclick: "$('body').scrollTo('#how', 800)", style: "cursor: pointer;"} How this Works
+                  %span{onclick: "$('body').scrollTo('#how', 800)", style: "cursor: pointer;"} At A Glance
                 - else
-                  %a{href: '/#how'} How this Works
+                  %a{href: '/#how'} At A Glance
               %li 
                 - if current_page?('/')
                   %span{onclick: "$('body').scrollTo('#benefits', 800)", style: "cursor: pointer;"} Benefits
@@ -27,14 +27,9 @@
                   %a{href: '/#benefits'} Benefits
               %li 
                 - if current_page?('/') 
-                  %span{onclick: "$('body').scrollTo('#why', 800)", style: "cursor: pointer;"} Why tugLocal™
+                  %span{onclick: "$('body').scrollTo('#why', 800)", style: "cursor: pointer;"} How This Works
                 - else
-                  %a{href: '/#why'} Why tugLocal
-              %li
-                - if current_page?('/')  
-                  %span{onclick: "$('body').scrollTo('#faq', 800)", style: "cursor: pointer;"} FAQ
-                - else
-                  %a{href: '/#faq'} FAQ
+                  %a{href: '/#why'} How This Works
         .col-xs-6.footer-section
           .footer-section-header
             %span WE ARE SOCIAL
@@ -79,7 +74,7 @@
                 %li
                   = image_tag("phone_footer_icon.png")
                   %span 
-                    = "(888) 504-6302"
+                    = "(716) 210-6249"
                 %li
                   = image_tag("mail_footer_icon.png")
                   %span
