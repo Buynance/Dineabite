@@ -6,6 +6,11 @@ class OffersController < ApplicationController
 		@offer = Offer.find(params[:id])
 
 	end
+
+	def demo
+		
+	end
+
 	
 	def create_offer
 		offer = Offer.find_by(offer_code: params[:offer_code])
