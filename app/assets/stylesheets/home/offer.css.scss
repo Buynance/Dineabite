@@ -1,0 +1,229 @@
+$dark-gray: rgb(96, 96, 96);
+$tuglocal-blue: rgb(29, 179, 229);
+$tuglocal-green: rgb(163, 196, 19);
+$lato-bold: "latobold", Arial, sans-serif;
+$lato-regular: "latoregular", Arial, sans-serif;
+$lato-italics: "latoitalics", Arial, sans-serif;
+$lato-light: 'latolight', Arial, sans-serif;
+$text-gray: rgb(139, 139, 139);
+$background-gray: rgb(242, 242, 242);
+
+
+
+
+.offer-container{
+	width: 100%;
+	span{
+	color: rgb(87, 87, 87);
+}
+	.offer-image{
+		img{
+			width: 100%;
+		}
+	}
+	.offer-body, .offer-description{
+		//padding-top: 1.5em;
+		padding-left: 0.6em;
+		padding-right: 0.6em;
+		background-color: white;
+
+		.offer-body-subtitle{
+			padding-top: 1.2em;
+			padding-bottom: 1.0em;
+			padding-left: 1.0em;
+			.offer-body-subtitle-short-description{
+				span{
+					font-family: $lato-regular;
+					font-size: 2.0em;
+				}
+			}
+			.offer-body-subtitle-business-name{
+				span{
+					color: $tuglocal-blue;
+					font-family: $lato-bold;
+					font-size: 2.0em;
+				}
+			}
+		}
+
+		.offer-body-border{
+			width: 100%;
+			height: 3px;
+			background: url(offer-border.png);
+			background-repeat: repeat-x;
+		}
+
+		.offer-body-price{
+			padding-top: 0.6em;
+			padding-bottom: 0.6em;
+			padding-left: 1.0em;
+			.offer-body-price-amount{
+				float: left;
+
+				span{
+					font-family: $lato-bold;
+					font-size: 2.8em;
+				}
+
+				.offer-body-price-amount-new{
+					color: $tuglocal-green;
+				}
+			}
+			.offer-body-price-action{
+				float: right;
+				width: 11.0em;
+				text-align: center;
+				padding: 1.5em;
+				background-color: $tuglocal-blue;
+				a{
+					color: white;
+					font-family: $lato-bold;
+					font-size: 2.2em;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.offer-body-discount{
+			background-color: $tuglocal-green;
+			text-align: center;
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			span{
+				font-family: $lato-regular;
+				font-size: 2.2em;
+				color: white;
+			}
+		}
+
+		.offer-body-quantity{
+			padding-top: 2.0em;
+			padding-bottom: 2.0em;
+			text-align: center;
+			span{
+				
+				font-size: 1.8em;
+				font-family: $lato-regular;
+			}
+		}
+
+		.offer-body-checkout{
+			padding-top: 1.2em;
+			padding-bottom: 1.2em;
+			width: 100%;
+			.offer-body-checkout-section{
+       			width:100%;
+				.offer-body-checkout-section-label{
+						text-align:center;
+						margin-bottom: 1.2em;
+						span{
+						font-family: $lato-regular;
+						font-size: 1.6em;
+					}
+				}
+				.offer-body-checkout-section-input{
+					width: 90%;
+					margin: 0 auto;
+					text-align: center;
+					font-size: 1.6em;
+					input{
+						width: 100%;
+						font-family: $lato-regular;
+					}
+				}
+			}
+		}
+	}
+
+	.offer-description{
+		padding-left: 0.6em;
+		padding-right: 0.6em;
+		background-color: rgb(244, 244, 244);
+		padding-top: 2.5em;
+		padding-bottom: 0.6em;
+
+	}
+}
+
+.offer-info-section{
+	margin-bottom: 1.2em;
+	.offer-info-section-title{
+		padding-top: 1.2em;
+		padding-bottom: 1.6em;
+		padding-left: 1.0em;
+		background-color: rgb(169, 180, 182);
+		span{
+			font-size: 1.8em;
+			font-family: $lato-bold;
+			color: white;
+		}
+	}
+	.offer-info-section-body{
+		padding: 1.2em;
+		background-color: white;
+		span{
+			font-family: $lato-italics;
+			font-size: 1.2em;
+		}
+	}
+}
+
+.offer-body-checkout-submit{
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-bottom: 0.8em;
+	.offer-body-checkout-submit-button{
+		text-align: center;
+		padding: 1.2em;
+		background-color: $tuglocal-blue;
+		a{
+			color: white !important;
+			font-family: $lato-regular;
+			font-size: 2.2em;
+			text-decoration: none;
+			text-shadow: none;
+			font-weight: normal
+		}
+	}
+}
+
+.cloudsponge-label{
+	text-align: center;
+	margin-bottom: 1.2em;
+	span{
+		font-family: $lato-regular;
+		font-size: 1.6em;
+	}
+}
+
+.cloudsponge-social-buttons{
+	text-align: center;
+	margin-bottom: 1.2em;
+}
+
+#contact-list{
+	textarea{
+		height: 10.0em;
+	}
+}
+
+.offer-invite-header{
+	text-align: center;
+	font-size: 2.0em;
+	font-family: $lato-regular;
+	margin-bottom: 0.8em;
+	margin-top: 0.8em;
+}
+
+.offer-info-action{
+	width: 100%;
+	text-align: center;
+	padding: 1.5em;
+	background-color: $tuglocal-blue;
+	a{
+		color: white !important;
+		font-family: $lato-bold;
+		font-size: 2.2em;
+		text-decoration: none !important;
+	}
+}
