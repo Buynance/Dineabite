@@ -1,0 +1,45 @@
+.offer-container
+  .offer-image
+    /= image_tag(@offer.image_url)
+    = image_tag("demo-offer-image.png")
+  .offer-body
+    .offer-body-subtitle
+      .offer-body-subtitle-short-description
+        %span{style: "font-family: 'latobold', Arial, sans-serif;"} #{@offer.full_price} for #{@offer.discounted_price} at
+      .offer-body-subtitle-business-name
+        %span 
+          = @offer.business.name
+    .offer-body-border
+    .offer-body-price.clearfix
+      .offer-body-price-amount{style: "padding-top: 1.0em;"}
+        %span.offer-body-price-amount-old{style: "color: rgb(191, 191, 191); margin-right: 0.3em;text-decoration: line-through;"} #{number_to_currency(@offer.full_price / 10.0, precision: 0)}
+        %span.offer-body-price-amount-new #{number_to_currency(@offer.discounted_price / 10.0, precision: 0)}!
+      .offer-body-price-action
+        %a{href: "#buypage"} BUY
+    .offer-body-discount
+      %span 
+        = "#{((@offer.discounted_price * 1.0) / (@offer.full_price * 1.0) * 100).round}% Discount"
+    .offer-body-quantity
+      %span{style: "font-family: 'latobold', Arial, sans-serif;"} #{(@offer.available_quantity - @offer.remaining_quantity )}
+      %span Sold 
+      %span{style: "color: rgb(185, 185, 185);"} >
+      %span{style: "font-family: 'latobold', Arial, sans-serif; color: rgb(163, 196, 19);"} #{@offer.remaining_quantity} 
+      %span{style: "color: rgb(163, 196, 19);"} Remaining 
+  .offer-description
+    .offer-info-section
+      .offer-info-section-title
+        %span The Favorites
+      .offer-info-section-body
+        %span #{@offer.favorite}
+    .offer-info-section
+      .offer-info-section-title
+        %span Fine Print
+      .offer-info-section-body
+        %span #{@offer.fine_print}
+    .offer-info-section{style: "margin-bottom: 2.5em;"}
+      .offer-info-section-title
+        %span Find Us
+      .offer-info-section-body{style: "padding: 0;"}
+        = image_tag("https://maps.googleapis.com/maps/api/staticmap?center=New+York,NY&zoom=15&size=600x300&key=AIzaSyBACcW1Scur7a7j0x4DK8Ej5vqltnS26XE", style: "width: 100%;")
+    .offer-info-action
+      %a{href: "#buypage"} BUY

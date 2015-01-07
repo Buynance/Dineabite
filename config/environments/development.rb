@@ -34,4 +34,20 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  config.action_mailer.default_url_options = { :host => 'localhost' }
+  config.action_mailer.perform_deliveries = true 
+  # Debug mode disables concatenation and preprocessing of assets.
+  # This option may cause significant delays in view rendering with a large
+  # number of complex assets.
+  config.assets.debug = true
+  config.action_mailer.smtp_settings = {
+    :address   => "smtp.mandrillapp.com",
+    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
+    :enable_starttls_auto => true, # detects and uses STARTTLS
+    :user_name => "edwin.velaquez89@gmail.com",
+    :password  => "ut-yLK_q5DzqyvqJ1cF-Xg", # SMTP password is any valid API key
+    :authentication => 'plain', # Mandrill supports 'plain' or 'login'
+    :domain => 'tuglocal.com', # your domain to identify your server when connecting
+  }
+
 end

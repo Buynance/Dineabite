@@ -119,6 +119,8 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.3)
       railties (>= 3.2.16)
+    jquery_mobile_rails (1.4.5)
+      railties (>= 3.1.0)
     json (1.8.1)
     jwt (1.0.0)
     kaminari (0.16.1)
@@ -237,6 +239,7 @@ DEPENDENCIES
   html2haml
   jbuilder (~> 2.0)
   jquery-rails
+  jquery_mobile_rails
   pg
   quiet_assets
   rails (= 4.1.0)

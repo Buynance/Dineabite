@@ -1,0 +1,27 @@
+.offer-container
+  .offer-image
+    /= image_tag(@offer.image_url)
+    = image_tag("demo-offer-image.png")
+  .offer-body{style: "padding-top: 0.6em; background-color: #f4f4f4;"}
+    .offer-body-discount{style: "padding-top: 1.0em; padding-bottom: 1.0em;"}
+      %span 
+        = "Order Complete"
+    .offer-body-quantity{style: "background-color: white;"}
+      %span Order 
+      %span{style: "font-family: 'latobold', Arial, sans-serif;"} #3878
+  .offer-description
+    .offer-info-section
+      .offer-info-section-title
+        %span Redemption Instructions
+      .offer-info-section-body
+        %span You're all set! Check your email and your coupon for half off next time should be there. Simply print and bring it in the next time you stop by, or have the coupon handy to display on your phone. 
+    .offer-info-section
+      .offer-info-section-title
+        %span Want FREE Food For Life?
+      .offer-info-section-body
+        %span Invite your friends to take advantage of this amazing deal and be automatically entered into a contest where a few lucky winners will win FREE FOOD for life here at Grill On The Hill. 
+
+    = render "cloudsponge"
+    .offer-body-checkout-submit
+      .offer-body-checkout-submit-button
+        %a{href: "#donepage"} Invite Friends Now

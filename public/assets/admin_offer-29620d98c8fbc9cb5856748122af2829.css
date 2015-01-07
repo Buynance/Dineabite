@@ -1,0 +1,238 @@
+/* line 11, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+/* line 16, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview {
+  line-height: normal;
+}
+/* line 18, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container {
+  width: 100%;
+}
+/* line 20, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container span {
+  color: #575757;
+}
+/* line 24, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-image img {
+  width: 100%;
+}
+/* line 28, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body, #offer-preview .offer-container .offer-description {
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  background-color: white;
+}
+/* line 34, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-subtitle, #offer-preview .offer-container .offer-description .offer-body-subtitle {
+  padding-top: 1.2em;
+  padding-bottom: 1.0em;
+  padding-left: 1.0em;
+}
+/* line 39, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-subtitle .offer-body-subtitle-short-description span, #offer-preview .offer-container .offer-description .offer-body-subtitle .offer-body-subtitle-short-description span {
+  font-family: "latoregular", Arial, sans-serif;
+  font-size: 2.0em;
+}
+/* line 45, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-subtitle .offer-body-subtitle-business-name span, #offer-preview .offer-container .offer-description .offer-body-subtitle .offer-body-subtitle-business-name span {
+  color: #1db3e5;
+  font-family: "latobold", Arial, sans-serif;
+  font-size: 2.0em;
+}
+/* line 53, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-border, #offer-preview .offer-container .offer-description .offer-body-border {
+  width: 100%;
+  height: 3px;
+  background: url(offer-border.png);
+  background-repeat: repeat-x;
+}
+/* line 60, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-price, #offer-preview .offer-container .offer-description .offer-body-price {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-left: 1.0em;
+}
+/* line 64, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-price .offer-body-price-amount, #offer-preview .offer-container .offer-description .offer-body-price .offer-body-price-amount {
+  float: left;
+}
+/* line 67, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-price .offer-body-price-amount span, #offer-preview .offer-container .offer-description .offer-body-price .offer-body-price-amount span {
+  font-family: "latobold", Arial, sans-serif;
+  font-size: 2.8em;
+}
+/* line 72, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-price .offer-body-price-amount .offer-body-price-amount-new, #offer-preview .offer-container .offer-description .offer-body-price .offer-body-price-amount .offer-body-price-amount-new {
+  color: #a3c413;
+}
+/* line 76, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-price .offer-body-price-action, #offer-preview .offer-container .offer-description .offer-body-price .offer-body-price-action {
+  float: right;
+  width: 11.0em;
+  text-align: center;
+  padding: 1.5em;
+  background-color: #1db3e5;
+}
+/* line 82, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-price .offer-body-price-action a, #offer-preview .offer-container .offer-description .offer-body-price .offer-body-price-action a {
+  color: white;
+  font-family: "latobold", Arial, sans-serif;
+  font-size: 2.2em;
+  text-decoration: none;
+}
+/* line 91, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-discount, #offer-preview .offer-container .offer-description .offer-body-discount {
+  background-color: #a3c413;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+/* line 96, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-discount span, #offer-preview .offer-container .offer-description .offer-body-discount span {
+  font-family: "latoregular", Arial, sans-serif;
+  font-size: 2.2em;
+  color: white;
+}
+/* line 103, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-quantity, #offer-preview .offer-container .offer-description .offer-body-quantity {
+  padding-top: 2.0em;
+  padding-bottom: 2.0em;
+  text-align: center;
+}
+/* line 107, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-quantity span, #offer-preview .offer-container .offer-description .offer-body-quantity span {
+  font-size: 1.8em;
+  font-family: "latoregular", Arial, sans-serif;
+}
+/* line 114, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-checkout, #offer-preview .offer-container .offer-description .offer-body-checkout {
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  width: 100%;
+}
+/* line 118, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-checkout .offer-body-checkout-section, #offer-preview .offer-container .offer-description .offer-body-checkout .offer-body-checkout-section {
+  width: 100%;
+}
+/* line 120, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-checkout .offer-body-checkout-section .offer-body-checkout-section-label, #offer-preview .offer-container .offer-description .offer-body-checkout .offer-body-checkout-section .offer-body-checkout-section-label {
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+/* line 123, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-checkout .offer-body-checkout-section .offer-body-checkout-section-label span, #offer-preview .offer-container .offer-description .offer-body-checkout .offer-body-checkout-section .offer-body-checkout-section-label span {
+  font-family: "latoregular", Arial, sans-serif;
+  font-size: 1.6em;
+}
+/* line 128, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-checkout .offer-body-checkout-section .offer-body-checkout-section-input, #offer-preview .offer-container .offer-description .offer-body-checkout .offer-body-checkout-section .offer-body-checkout-section-input {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.6em;
+}
+/* line 133, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-body .offer-body-checkout .offer-body-checkout-section .offer-body-checkout-section-input input, #offer-preview .offer-container .offer-description .offer-body-checkout .offer-body-checkout-section .offer-body-checkout-section-input input {
+  width: 100%;
+  font-family: "latoregular", Arial, sans-serif;
+}
+/* line 142, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-container .offer-description {
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  background-color: #f4f4f4;
+  padding-top: 2.5em;
+  padding-bottom: 0.6em;
+}
+/* line 152, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-info-section {
+  margin-bottom: 1.2em;
+}
+/* line 154, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-info-section .offer-info-section-title {
+  padding-top: 1.2em;
+  padding-bottom: 1.6em;
+  padding-left: 1.0em;
+  background-color: #a9b4b6;
+}
+/* line 159, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-info-section .offer-info-section-title span {
+  font-size: 1.8em;
+  font-family: "latobold", Arial, sans-serif;
+  color: white;
+}
+/* line 165, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-info-section .offer-info-section-body {
+  padding: 1.2em;
+  background-color: white;
+}
+/* line 168, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-info-section .offer-info-section-body span {
+  font-family: "latoitalics", Arial, sans-serif;
+  font-size: 1.2em;
+}
+/* line 175, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-body-checkout-submit {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 0.8em;
+}
+/* line 179, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-body-checkout-submit .offer-body-checkout-submit-button {
+  text-align: center;
+  padding: 1.2em;
+  background-color: #1db3e5;
+}
+/* line 183, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-body-checkout-submit .offer-body-checkout-submit-button a {
+  color: white !important;
+  font-family: "latoregular", Arial, sans-serif;
+  font-size: 2.2em;
+  text-decoration: none;
+  text-shadow: none;
+  font-weight: normal;
+}
+/* line 194, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .cloudsponge-label {
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+/* line 197, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .cloudsponge-label span {
+  font-family: "latoregular", Arial, sans-serif;
+  font-size: 1.6em;
+}
+/* line 203, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .cloudsponge-social-buttons {
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+/* line 209, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview #contact-list textarea {
+  height: 10.0em;
+}
+/* line 214, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-invite-header {
+  text-align: center;
+  font-size: 2.0em;
+  font-family: "latoregular", Arial, sans-serif;
+  margin-bottom: 0.8em;
+  margin-top: 0.8em;
+}
+/* line 222, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-info-action {
+  text-align: center;
+  padding: 1.5em;
+  background-color: #1db3e5;
+}
+/* line 226, C:/Sites/tugLocal/vendor/assets/stylesheets/admin_offer.css.scss */
+#offer-preview .offer-info-action a {
+  color: white !important;
+  font-family: "latobold", Arial, sans-serif;
+  font-size: 2.2em;
+  text-decoration: none !important;
+}

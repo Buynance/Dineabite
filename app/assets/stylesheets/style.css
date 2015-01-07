@@ -1,3 +1,15 @@
+/* 
+ Jquery Mobile Overide
+*/
+
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a {
+	font-weight: normal;
+}
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+	text-shadow: 0 0 0;
+}
+
 
 
 .web_body .container .main_body {
