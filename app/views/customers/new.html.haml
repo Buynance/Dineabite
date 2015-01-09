@@ -1,0 +1,9 @@
+= simple_form_for @customer do |cb|
+  = cb.input :first_name
+  = cb.input :last_name
+  = cb.input :phone_number
+  = cb.simple_fields_for :dialer_links do |dlb|
+    = dlb.input :root_link
+    = dlb.input :delay
+  = cb.submit
+    

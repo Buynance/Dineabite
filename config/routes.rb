@@ -58,12 +58,15 @@ Rails.application.routes.draw do
 
   resources :potential_businesses
   resources :offers
+  resources :customers
+  resources :dialer_links
   
   get "sms/offer/link" => "sms_offers#send_offer_link"
   get "sms/offer/validation" => "sms_offers#check_offer_code"
   get "demo" => "offers#demo"
 
   post "sms/offer/send_redemption" => "sms_offers#send_redemption_email"
+  post "sms/offer/redeem_offer" => "sms_offers#redeem_offer"
   
   root 'static_pages#index'
 

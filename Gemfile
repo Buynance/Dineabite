@@ -38,7 +38,11 @@ gem 'simple_form'
 
 gem 'twilio-ruby'
 
+gem 'googl'
+
 gem 'devise'
+
+gem 'delayed_job_active_record'
 
 group :production do
   gem 'pg'
